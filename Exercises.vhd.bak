@@ -1,0 +1,14 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY Exercises IS
+	PORT(
+		a, b, c, d : IN std_logic;
+		outputE1 : OUT std_logic
+	);
+END Exercises;
+
+ARCHITECTURE Practice01 OF Exercises IS
+	BEGIN 
+		outputE1 <= NOT (a XOR b);
+END Practice01;
